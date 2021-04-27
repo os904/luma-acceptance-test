@@ -30,6 +30,7 @@ public class AccountManagementSteps {
     @When("^user enter \"([^\"]*)\"and \"([^\"]*)\"and\"([^\"]*)\"and\"([^\"]*)\"and\"([^\"]*)\"$")
     public void userEnterAndAndAndAnd(String FirstName, String LastName, String Email, String Password, String ConfirmPassword) throws Throwable {
       driver.findElement(By.id("firstname")).sendKeys(FirstName);
+      driver.findElement(By.id("lastname")).sendKeys(LastName);
 
 
     }
